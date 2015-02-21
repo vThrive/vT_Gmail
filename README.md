@@ -3,6 +3,8 @@ Python command line script to search Gmail emails (Google Apps)
 
 Google Developer's Console - create your app, generate the client_sercret.json file, download it, and enable the Gmail API for that client (steps here - https://developers.google.com/gmail/api/quickstart/quickstart-python)
 
+For service accounts, follow the instructions from here - https://developers.google.com/drive/web/delegation
+
 Install Google Client Library (python) with 
 
 easy_install --upgrade google-api-python-client
