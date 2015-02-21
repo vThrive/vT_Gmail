@@ -15,7 +15,7 @@ Use it as:
 
 python vT_Gmail.py<br />
 python vT_Gmail.py -u me<br />
-python vT_Gmail.py -u me -l INBOX<br />
+python vT_Gmail.py -u me -l INBOX ### "l" for label<br />
 python vT_Gmail.py -u me -l INBOX -ist True<br />
 python vT_Gmail.py -u me -l INBOX -ist True -m 5<br />
 python vT_Gmail.py -u me -l INBOX -ist True -m 5 -q "something interesting"<br />
