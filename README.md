@@ -9,7 +9,7 @@ easy_install --upgrade google-api-python-client
 -OR-
 pip install --upgrade google-api-python-client
 
-In a directory, copy the vT_Gmail.py file and client_secret.json file.
+In a directory, copy the vT_Gmail.py file and client_secret.json file; if you are going to use the servie account, then copy the PKCS12 key file here.
 
 Use it as:
 
@@ -21,12 +21,15 @@ python vT_Gmail.py -u me -l INBOX <br />
 python vT_Gmail.py -u me -l INBOX -ist True<br />
 python vT_Gmail.py -u me -l INBOX -ist True -m 5<br />
 python vT_Gmail.py -u me -l INBOX -ist True -m 5 -q "something interesting"<br />
+python vT_Gmail.py -u 'user@domain.com' -sa True -sae 'myuser.apps.googleusercontent.com' -k 'mykey.p12' <br />
 
 On first run, authorize the script using your Google Apps login via the browser.
 
-usage: main.py [-h] [-u USERID] [-m MAXRESULTS] [-csf CLIENTSECRETFILE] [-d DEBUG] [-q QUERYFOR] [-l LABEL] [-i INCLUDESPAMTRASH]
+usage: main.py [-h] [-u USERID] [-m MAXRESULTS] [-csf CLIENTSECRETFILE]<br />
+         [-d DEBUG] [-q QUERYFOR] [-l LABEL] [-i INCLUDESPAMTRASH]<br />
+         [-sa USESERVICEACCOUNT] [-sae SAEMAIL] [-k KEY]<br />
 
-vT_Gmail search tool
+vT_Gmail search tool<br />
 
 optional arguments:<br />
   -h, --help            show this help message and exit<br />
@@ -44,3 +47,8 @@ optional arguments:<br />
       Label / folder to search in, default INBOX<br />
   -i INCLUDESPAMTRASH, --includeSpamTrash INCLUDESPAMTRASH<br />
       Include Spam/Trash in search, default False<br />
+  -sa USESERVICEACCOUNT, --useServiceAccount USESERVICEACCOUNT<br />
+      Use Service Account<br />
+  -sae SAEMAIL, --SAEmail SAEMAIL<br />
+      Service Account Email address<br />
+  -k KEY, --key KEY     PKCS12 Key File Path, default key.p12<br />
