@@ -13,9 +13,11 @@ In a directory, copy the vT_Gmail.py file and client_secret.json file.
 
 Use it as:
 
+Note that here "l" is for "label", it is not "I"
+
 python vT_Gmail.py<br />
 python vT_Gmail.py -u me<br />
-python vT_Gmail.py -u me -l INBOX ### "l" for label<br />
+python vT_Gmail.py -u me -l INBOX <br />
 python vT_Gmail.py -u me -l INBOX -ist True<br />
 python vT_Gmail.py -u me -l INBOX -ist True -m 5<br />
 python vT_Gmail.py -u me -l INBOX -ist True -m 5 -q "something interesting"<br />
