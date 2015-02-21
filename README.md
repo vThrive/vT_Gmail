@@ -9,7 +9,7 @@ easy_install --upgrade google-api-python-client
 -OR-
 pip install --upgrade google-api-python-client
 
-In a directory, copy the vT_Gmail.py file and client_secret.json file; if you are going to use the servie account, then copy the PKCS12 key file here.
+In a directory, copy the vT_Gmail.py file and client_secret.json file; if you are going to use the service account, then copy the PKCS12 key file here.
 
 Use it as:
 
