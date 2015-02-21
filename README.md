@@ -13,7 +13,7 @@ In a directory, copy the vT_Gmail.py file and client_secret.json file.
 
 Use it as:
 
-python vT_Gmail.py
+python vT_Gmail.py<br />
 python vT_Gmail.py -u me
 python vT_Gmail.py -u me -l INBOX
 python vT_Gmail.py -u me -l INBOX -ist True
