@@ -20,7 +20,7 @@ python vT_Gmail.py -u me -l INBOX -ist True
 python vT_Gmail.py -u me -l INBOX -ist True -m 5
 python vT_Gmail.py -u me -l INBOX -ist True -m 5 -q "something interesting"
 
-On first run, authorize the script.
+On first run, authorize the script using your Google Apps login via the browser.
 
 usage: main.py [-h] [-u USERID] [-m MAXRESULTS] [-csf CLIENTSECRETFILE] [-d DEBUG] [-q QUERYFOR] [-l LABEL] [-i INCLUDESPAMTRASH]
 
